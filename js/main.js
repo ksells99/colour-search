@@ -5,7 +5,7 @@ search.value = '';                                        // set initial search 
 // Search colours.json and filter
 
 const searchColours = async searchText => {
-    const res = await fetch('../data/colours.json');      // gets data from json file
+    const res = await fetch('https://ksells99.github.io/colour-search/data/colours.json');      // gets data from json file
     const colours = await res.json();                     // converts it to json
 
     
