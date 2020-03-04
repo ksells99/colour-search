@@ -1,0 +1,11 @@
+* {
+    min-width: 100%;
+    padding: 5px;
+    align-content: center;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
