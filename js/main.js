@@ -10,10 +10,17 @@ const searchColours = async searchText => {
 
     
 
+
     // Get matches to current text input
     let matches = colours.filter(colour => {                                // for each colour...
         const regex = new RegExp(`${searchText}`, 'gi');                    // create regular exp. based on search term
-        return colour.name.match(regex) || colour.hexString.match(regex);   // returns an array of matching colour names and hex values
+
+        var rgbR = colour.rgb.r.toString();
+        var rgbG = colour.rgb.g.toString();
+        var rgbB = colour.rgb.b.toString();
+        var rgbVal = (`(${rgbR},${rgbG},${rgbB})`);
+                
+        return colour.name.match(regex) || colour.hexString.match(regex) || rgbVal.match(regex);  // returns an array of matching colour names, hex values and RGB values
         
     });
 
