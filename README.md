@@ -1,4 +1,4 @@
-# colour-search
+# JavaScript Colour Name/HexCode/RGB search app
 Inspired by Traversy Media's JS autocomplete tutorial, this application allows the user to search for colour names, RGB values and hex codes, fetched from a local JSON file.
 
 The app can be accessed here: **https://ksells99.github.io/colour-search/**
